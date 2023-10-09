@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+	background-color: hsl(210, 60%, 98%);
+	display: grid;
+	place-content: center;
+}
+
+.notifications-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	border-radius: 15px;
+	width: 550px;
+	height: 650px;
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.notifications {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+	font-size: 12px;
+}
+.notification {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	gap: 10px;
+	border-radius: 5px;
+	padding: 10px;
+}
+.notification-center {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.avatar {
+	height: 40px;
+	width: 40px;
+}
+.reset-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.reset-bar span {
+	font-weight: 800;
+	font-size: 20px;
+	color: hsl(224, 21%, 14%);
+}
+.reset-bar button {
+	border: none;
+	background-color: transparent;
+}
+.name,
+.activity {
+	margin-right: 2px;
+}
+.name,
+.group,
+.post {
+	font-weight: 800;
+}
+.name {
+	color: hsl(224, 21%, 14%);
+}
+.name:hover {
+	color: blue;
+}
+.group {
+	color: blue;
+}
+.post {
+	color: hsl(219, 12%, 42%);
+}
+.icon {
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	border-radius: 50%;
+	background-color: orangered;
+}
+.time,
+.activity,
+button {
+	color: hsl(219, 14%, 63%);
+}
+
+.content {
+	border: 1px solid hsl(211, 68%, 94%);
+	color: hsl(219, 14%, 63%);
+	padding: 10px;
+}
+.unread {
+	background-color: hsl(210, 60%, 98%);
+}
+.picture {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 480px;
+}
